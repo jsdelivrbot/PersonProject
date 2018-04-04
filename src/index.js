@@ -1,17 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Hello from './Hello';
+import withStyles from 'material-ui/styles/withStyles'
 
-const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
-};
+const App = withStyles({
+  root: {
+    fontFamily: 'Ubuntu',
+    textAlign: 'center',
+  },
+})(({ classes }) => (
+  <div className={classes.root}>
 
-const App = () => (
-  <div style={styles}>
-    <Hello name="CodeSandbox" />
-    <h2>Start editing to see some magic happen {'\u2728'}</h2>
   </div>
-);
+))
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById('root'))
