@@ -1,2 +1,0 @@
-# PersonProject
-Created with CodeSandbox
