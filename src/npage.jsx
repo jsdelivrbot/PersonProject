@@ -3,7 +3,6 @@ import { Card, CardHeader, CardContent } from 'material-ui'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import withStyles from 'material-ui/styles/withStyles'
-import npage from './npage.jsx'
 
 export default withStyles({
   root: {
@@ -11,6 +10,6 @@ export default withStyles({
   },
 })(({ classes }) => (
   <div>
-  <Link to="/npage"> Who is theis </Link>
+    <Link to="/"> hohoho </Link>
   </div>
 ))
