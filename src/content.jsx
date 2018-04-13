@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import withStyles from 'material-ui/styles/withStyles'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import {Button, Paper} from 'material-ui'
+import Button from 'material-ui/Button'
 
 export default withStyles({
   root: {
@@ -10,24 +10,10 @@ export default withStyles({
     fontFamily: 'Ubuntu',
     textAlign: 'center',
   },
-  paper: {
-    paddingTop: '2.0rem',
-    background: '#37474F',
-    marginRight: '5.0vw',
-    marginLeft: '5.0vw',
-    lineHeight: '3.0rem',
-    fontSize: '2.25rem',
-    paddingBottom: '0.5rem',
-  },
 })(({ classes }) => (
   <div>
-  <Paper className='paper'>
-    <p>
-        yes boi
-    </p>
-    <Button href='/content'>
-      yesssss
+    <Button href='/'>
+    Back to the Home Page
     </Button>
-    </Paper>
   </div>
 ))
