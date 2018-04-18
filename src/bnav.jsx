@@ -10,7 +10,7 @@ import BottomNavigation, {
 export default withStyles({
   bnav: {
     color: "#0D47A1",
-    background: "#4CAF50",
+    background: "#11AAC4",
     height: "10vw",
     width: "100vw",
     position: "fixed",

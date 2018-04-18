@@ -16,7 +16,7 @@ export default withStyles({
   },
   paper: {
     paddingTop: "2.0rem",
-    background: "#90A4AE",
+    background: "#9ECCAF",
     height: "100vw",
     width: "100vw",
     color: "#5E35B1",
@@ -30,12 +30,16 @@ export default withStyles({
     background: "#4CAF50",
     height: "10vw",
     width: "100vw"
-  }
+  },
+  button: {
+    color: 'blue',
+    background: 'green'
+  },
 })(({ classes }) => (
   <div>
     <Paper className={classes.paper}>
-      <p>yes boi</p>
-      <Button href="/content">yesssss</Button>
+      <p>Guido van Rossum</p>
+      <Button className={classes.button}>A bit about Guido!</Button>
     </Paper>
     <Bnav />
   </div>
