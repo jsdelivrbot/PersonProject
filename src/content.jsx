@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import withStyles from 'material-ui/styles/withStyles'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Button from 'material-ui/Button'
-import Bnav from './bnav'
+import Abar from './abar'
 
 export default withStyles({
   root: {
@@ -16,6 +16,6 @@ export default withStyles({
     <Button href='/'>
     Back to the Home Page
     </Button>
-    <Bnav />
+    <Abarv />
   </div>
 ))

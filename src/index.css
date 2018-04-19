@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+        url(./fonts/roboto.woff2) format('woff2'),
+        url(./fonts/roboto.woff) format('woff');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #9eccaf;
+    overflow: hidden;
+    color: #cecece;
+    font-family: 'Ubuntu', 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    border-bottom: 2px;
+    border-style: solid;
+}

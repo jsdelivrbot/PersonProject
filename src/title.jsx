@@ -6,7 +6,7 @@ import { Button, Paper } from "material-ui";
 import BottomNavigation, {
   BottomNavigationAction
 } from "material-ui/BottomNavigation";
-import Bnav from "./bnav";
+import Abar from "./abar";
 
 export default withStyles({
   root: {
@@ -15,17 +15,17 @@ export default withStyles({
     textAlign: "center"
   },
   paper: {
-    paddingTop: "2.0rem",
+    paddingTop: "30px",
     background: "#9ECCAF",
-    height: "100vw",
-    width: "100vw",
-    color: "#5E35B1",
+    height: "103vh",
+    width: "103vw",
+    color: "#3F51B5",
     lineHeight: "3.0rem",
     fontSize: "2.25rem",
     paddingBottom: "0.5rem",
     fontFamily: "Ubuntu"
   },
-  bnav: {
+  tnav: {
     color: "#0D47A1",
     background: "#4CAF50",
     height: "10vw",
@@ -33,14 +33,23 @@ export default withStyles({
   },
   button: {
     color: 'blue',
-    background: 'green'
+    background: '#4CAF50',
+  },
+  text: {
+    fontFamily: 'Ubuntu',
+    textAlign: 'center',
+    fontSize: '18px',
+    paddingTop: '.5vw',
   },
 })(({ classes }) => (
-  <div>
+  <div className={classes.body}>
+  <Abar />
     <Paper className={classes.paper}>
       <p>Guido van Rossum</p>
-      <Button className={classes.button}>A bit about Guido!</Button>
+      <Button href='/content' className={classes.button}>A bit about Guido!</Button>
+      <p className={classes.text}>
+        Too much shade from tom
+      </p>
     </Paper>
-    <Bnav />
   </div>
 ));

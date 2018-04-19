@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import withStyles from 'material-ui/styles/withStyles'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Content from './content.jsx';
-import Title from './title.jsx'
+import Content from './content';
+import Title from './title'
 
 const App = withStyles({
   root: {
