@@ -4,6 +4,7 @@ import withStyles from 'material-ui/styles/withStyles'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Content from './content';
 import Title from './title'
+import './index.css'
 
 const App = withStyles({
   root: {

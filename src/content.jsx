@@ -16,6 +16,6 @@ export default withStyles({
     <Button href='/'>
     Back to the Home Page
     </Button>
-    <Abarv />
+    <Abar />
   </div>
 ))

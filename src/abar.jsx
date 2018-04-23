@@ -7,15 +7,17 @@ import AppBar from "material-ui/AppBar";
 
 export default withStyles({
   tnav: {
-    color: "#0D47A1",
-    background: "#80CBC4",
-    height: "8vw",
+    color: "#D32f2f",
+    background: "#90CAF9",
+    height: "9vw",
     width: "100vw",
     position: "fixed",
     bottom: 0,
   }
 })(({ classes }) => (
   <div>
-    <AppBar className={classes.tnav} />
+    <AppBar className={classes.tnav}>
+    Guido van Rossum
+    </AppBar>
   </div>
 ));

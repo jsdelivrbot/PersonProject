@@ -10,16 +10,15 @@ import Abar from "./abar";
 
 export default withStyles({
   root: {
-    background: "#212121",
+    background: "#9ECCAF",
     fontFamily: "Ubuntu",
     textAlign: "center"
   },
   paper: {
     paddingTop: "30px",
-    background: "#9ECCAF",
     height: "103vh",
     width: "103vw",
-    color: "#3F51B5",
+    color: "#D84315",
     lineHeight: "3.0rem",
     fontSize: "2.25rem",
     paddingBottom: "0.5rem",
@@ -32,24 +31,27 @@ export default withStyles({
     width: "100vw"
   },
   button: {
-    color: 'blue',
-    background: '#4CAF50',
+    color: "#FF7043",
+    background: "#8D6E63"
   },
   text: {
-    fontFamily: 'Ubuntu',
-    textAlign: 'center',
-    fontSize: '18px',
-    paddingTop: '.5vw',
+    fontFamily: "Ubuntu",
+    textAlign: "center",
+    fontSize: "18px",
+    paddingTop: ".5vw"
+  },
+  padding: {
+    marginTop: "60px",
   },
 })(({ classes }) => (
-  <div className={classes.body}>
-  <Abar />
-    <Paper className={classes.paper}>
-      <p>Guido van Rossum</p>
-      <Button href='/content' className={classes.button}>A bit about Guido!</Button>
-      <p className={classes.text}>
-        Too much shade from tom
-      </p>
-    </Paper>
+  <div className={classes.paper}>
+    <Abar />
+    <div className={classes.padding} />
+    <Button href="/content" className={classes.button}>
+      A bit about Guido!
+    </Button>
+    <p className={classes.text}>
+      Too much shade from tom thats sitll there and ich havent changed it
+    </p>
   </div>
 ));
