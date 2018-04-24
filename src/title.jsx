@@ -31,14 +31,15 @@ export default withStyles({
     width: "100vw"
   },
   button: {
-    color: "#FF7043",
-    background: "#8D6E63"
+    color: "#212121",
+    background: "#FF7043"
   },
   text: {
     fontFamily: "Ubuntu",
     textAlign: "center",
     fontSize: "18px",
-    paddingTop: ".5vw"
+    paddingTop: ".5vw",
+    color: "#F5F5F5",
   },
   padding: {
     marginTop: "60px",

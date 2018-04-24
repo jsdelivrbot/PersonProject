@@ -7,8 +7,8 @@ import AppBar from "material-ui/AppBar";
 
 export default withStyles({
   tnav: {
-    color: "#D32f2f",
-    background: "#90CAF9",
+    color: "#90A4AE",
+    background: "#A5D6A7",
     height: "9vw",
     width: "100vw",
     position: "fixed",
