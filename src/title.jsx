@@ -57,7 +57,7 @@ export default withStyles({
       A bit about Guido!
     </Button>
     <p className={classes.text}>
-      Guido van Rossum is the talented, wonderful creator of Python
+      Guido van Rossum is the talented, wonderful creator of Python!
     </p>
     <p className={classes.textnopadding}>
 
