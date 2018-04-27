@@ -32,7 +32,7 @@ export default withStyles({
   },
   button: {
     color: "#212121",
-    background: "#FF7043"
+    background: "#00BCD4",
   },
   text: {
     fontFamily: "Ubuntu",
@@ -44,6 +44,11 @@ export default withStyles({
   padding: {
     marginTop: "60px",
   },
+  textnopadding: {
+    fontFamily: "Ubuntu",
+    textAlign: "center",
+    fontSize: "18px",
+  },
 })(({ classes }) => (
   <div className={classes.paper}>
     <Abar />
@@ -52,7 +57,10 @@ export default withStyles({
       A bit about Guido!
     </Button>
     <p className={classes.text}>
-      Too much shade from tom thats sitll there and ich havent changed it
+      Guido van Rossum is the talented, wonderful creator of Python
+    </p>
+    <p className={classes.textnopadding}>
+
     </p>
   </div>
 ));
