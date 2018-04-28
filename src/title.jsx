@@ -58,7 +58,7 @@ export default withStyles({
       A bit about Guido!
     </Button>
     <p className={classes.text}>
-      Guido van Rossum is the talented, wonderful creator of Python!
+      Guido van Rossum is the talented, wonderful creator of Python! 5/7 perfelt cskltr
     </p>
     <p className={classes.textnopadding}>
      <div className={classes.text}> By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
