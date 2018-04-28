@@ -52,6 +52,7 @@ export default withStyles({
 })(({ classes }) => (
   <div className={classes.paper}>
     <Abar />
+    
     <div className={classes.padding} />
     <Button href="/content" className={classes.button}>
       A bit about Guido!
@@ -60,7 +61,7 @@ export default withStyles({
       Guido van Rossum is the talented, wonderful creator of Python!
     </p>
     <p className={classes.textnopadding}>
-
+     <div className={classes.text}> By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
     </p>
   </div>
 ));
