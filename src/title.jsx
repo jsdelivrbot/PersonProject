@@ -7,6 +7,7 @@ import BottomNavigation, {
   BottomNavigationAction
 } from "material-ui/BottomNavigation";
 import Abar from "./abar";
+import Guido from "./Guido-portrait-2014.jpg";
 
 export default withStyles({
   root: {
@@ -52,7 +53,7 @@ export default withStyles({
 })(({ classes }) => (
   <div className={classes.paper}>
     <Abar />
-    
+    <img src= {Guido} alt="guido"/>
     <div className={classes.padding} />
     <Button href="/content" className={classes.button}>
       A bit about Guido!
