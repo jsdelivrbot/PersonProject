@@ -7,7 +7,6 @@ import BottomNavigation, {
   BottomNavigationAction
 } from "material-ui/BottomNavigation";
 import Abar from "./abar";
-import Guido from "./img/Guido-portrait-2014.jpg";
 
 export default withStyles({
   root: {
@@ -16,18 +15,13 @@ export default withStyles({
     textAlign: "center",
     overflow: "auto",
   },
-  tnav: {
-    color: "#0D47A1",
-    background: "#4CAF50",
-    height: "10vw",
-    width: "100vw"
-  },
   button: {
     color: "#212121",
     background: "#00BCD4",
     height: '5vw',
     width: '25vw',
     fontSize: '2vw',
+    fontFamily: 'Ubuntu',
   },
   text: {
     fontFamily: "Ubuntu",
@@ -64,14 +58,14 @@ export default withStyles({
     <Abar />
     <br />
     <p className={classes.lbreak}>​​​​​</p>
-    <img className={classes.guidosmol} src={Guido} alt="guido"/>
+    <img className={classes.guidosmol} src='https://rawgit.com/HonoriaShana/PersonProject/da4749b0104af46107c7ffd1a77549beda1428f4/src/Guido-portrait-2014.jpg' alt="guido"/>
     <div className={classes.padding} />
     <Link to='/content'><Button className={classes.button}>
       A bit about Guido!
     </Button>
     </Link>
     <p className={classes.text}>
-      Guido van Rossum is the talented, wonderful creator of Python! 
+      Guido van Rossum is the talented, wonderful creator of Python!
     </p>
     <p className={classes.textnopadding}>
      <div className={classes.citetext}>  Image By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
