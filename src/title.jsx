@@ -62,6 +62,7 @@ export default withStyles({
 })(({ classes }) => (
   <div className={classes.root} >
     <Abar />
+    <br />
     <p className={classes.lbreak}>​​​​​</p>
     <img className={classes.guidosmol} src={Guido} alt="guido"/>
     <div className={classes.padding} />
