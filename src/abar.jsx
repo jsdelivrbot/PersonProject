@@ -13,6 +13,7 @@ export default withStyles({
     width: "100vw",
     position: "fixed",
     bottom: 0,
+    fontSize: '7vw',
   }
 })(({ classes }) => (
   <div>

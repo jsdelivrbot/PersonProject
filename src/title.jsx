@@ -1,29 +1,20 @@
 import React from "react";
 import { render } from "react-dom";
 import withStyles from "material-ui/styles/withStyles";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { Button, Paper } from "material-ui";
 import BottomNavigation, {
   BottomNavigationAction
 } from "material-ui/BottomNavigation";
 import Abar from "./abar";
-import Guido from "./Guido-portrait-2014.jpg";
+import Guido from "./img/Guido-portrait-2014.jpg";
 
 export default withStyles({
   root: {
-    background: "#9ECCAF",
+    background: "#03A9F4",
     fontFamily: "Ubuntu",
-    textAlign: "center"
-  },
-  paper: {
-    paddingTop: "30px",
-    height: "103vh",
-    width: "103vw",
-    color: "#D84315",
-    lineHeight: "3.0rem",
-    fontSize: "2.25rem",
-    paddingBottom: "0.5rem",
-    fontFamily: "Ubuntu"
+    textAlign: "center",
+    overflow: "auto",
   },
   tnav: {
     color: "#0D47A1",
@@ -34,11 +25,14 @@ export default withStyles({
   button: {
     color: "#212121",
     background: "#00BCD4",
+    height: '5vw',
+    width: '25vw',
+    fontSize: '2vw',
   },
   text: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    fontSize: "18px",
+    fontSize: "3.75vw",
     paddingTop: ".5vw",
     color: "#F5F5F5",
   },
@@ -50,19 +44,36 @@ export default withStyles({
     textAlign: "center",
     fontSize: "18px",
   },
+  guidosmol: {
+    width: '40vw',
+    height: '30vw',
+  },
+  citetext: {
+    fontFamily: "Ubuntu",
+    textAlign: "center",
+    fontSize: "10px",
+    paddingTop: "1vw",
+    color: "#F5F5F5",
+  },
+  //this is lazy but i dont really care bloody css isnt help'n me rn
+  lbreak: {
+    height: '7vw',
+  },
 })(({ classes }) => (
-  <div className={classes.paper}>
+  <div className={classes.root} >
     <Abar />
-    <img src= {Guido} alt="guido"/>
+    <p className={classes.lbreak}>​​​​​</p>
+    <img className={classes.guidosmol} src={Guido} alt="guido"/>
     <div className={classes.padding} />
-    <Button href="/content" className={classes.button}>
+    <Link to='/content'><Button className={classes.button}>
       A bit about Guido!
     </Button>
+    </Link>
     <p className={classes.text}>
-      Guido van Rossum is the talented, wonderful creator of Python! 5/7 perfelt cskltr
+      Guido van Rossum is the talented, wonderful creator of Python! 
     </p>
     <p className={classes.textnopadding}>
-     <div className={classes.text}> By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
+     <div className={classes.citetext}>  Image By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
     </p>
   </div>
 ));
