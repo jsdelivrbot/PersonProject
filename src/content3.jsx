@@ -11,7 +11,7 @@ export default withStyles({
     fontFamily: 'Ubuntu',
     textAlign: 'center',
     color: "#F5F5F5",
-    fontSize: '1.5rem',
+    fontSize: '1.3rem',
   },
   lbreak: {
     height: '5rem',
