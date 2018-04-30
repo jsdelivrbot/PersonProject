@@ -48,10 +48,18 @@ export default withStyles({
     paddingTop: "1rem",
     paddingBottom: "1rem",
     color: "#F5F5F5",
+    textDecoration: "underline",
   },
   //this is lazy but i dont really care bloody css isnt help'n me rn
   lbreak: {
     height: '4rem',
+  },
+  buttonlicense: {
+    color: "#212121",
+    background: "#00BCD4",
+    width: '3rem',
+    fontSize: '.6rem',
+    fontFamily: 'Ubuntu',
   },
   spoopymarquee: {
     fontSize: '.01rem',
@@ -72,8 +80,13 @@ export default withStyles({
       Guido van Rossum is the talented, wonderful creator of Python!
     </p>
     <p className={classes.textnopadding}>
-     <div className={classes.citetext}>  Image By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
      <a rel="noopener noreferrer" target="_blank" href="mailto:honoriashana@gmail.com"> <div className={classes.citetext}> To email the creator of this website click here </div> </a>
+     <Link to='/licenses'>
+      <Button className={classes.buttonlicense}>
+      Licenses
+      </Button>
+       </Link>
     </p>
+    <marquee />
   </div>
 ));

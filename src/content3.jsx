@@ -7,9 +7,11 @@ import Abar from './abar'
 
 export default withStyles({
   root: {
-    background: '#212121',
+    background: '#03A9F4',
     fontFamily: 'Ubuntu',
     textAlign: 'center',
+    color: "#F5F5F5",
+    fontSize: '1.7rem',
   },
   lbreak: {
     height: '5rem',
@@ -31,13 +33,44 @@ export default withStyles({
     paddingTop: ".5rem",
     color: "#F5F5F5",
   },
+  listtwo: {
+    fontFamily: "Ubuntu",
+    textAlign: "center",
+    paddingTop: ".5rem",
+    color: "#004d40",
+  },
 })(({ classes }) => (
-  <div>
+  <div className={classes.root}>
     <Abar />
     <p className={classes.lbreak}>​​ </p>
-    <Link to='/'>
+    <Link to='/content2'>
       <Button className={classes.button}>
-        Back to the Home Page
+        Back to the Previous Page
+    </Button>
+    </Link>
+    <p> A list of large companies that use Python! </p>
+    <ul>
+      <li> Google </li>
+      <li> Dropbox </li>
+      <li> Wikipedia </li>
+      <li> Lucas Films </li>
+      <li> Reddit </li>
+      <li> Facebook </li>
+    <li> Amazon </li>
+    </ul>
+    <p />
+    <p> List of programs that use Python</p>
+    <ul className={classes.listtwo}>
+      <li> Blender </li>
+      <li> Maya </li>
+      <li> Ubuntu Software Center </li>
+      <li> Google App Engine </li>
+      <li> NumPy </li>
+      <li> Pygame</li>
+    </ul>
+    <Link to='/content4'>
+      <Button className={classes.button}>
+        To the Next Page
     </Button>
     </Link>
   </div>

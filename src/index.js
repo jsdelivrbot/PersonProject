@@ -8,6 +8,7 @@ import Content3 from './content3';
 import Content4 from './content4';
 import Content5 from './content5';
 import Title from './title'
+import Others from './otherscontent'
 import './index.css'
 
 const App = withStyles({
@@ -25,6 +26,7 @@ const App = withStyles({
         <Route exact path="/content3" component={Content3} />
         <Route exact path="/content4" component={Content4} />
         <Route exact path="/content5" component={Content5} />
+        <Route exact path="/licenses" component={Others} />
       </Switch>
       </div>
   </Router>

@@ -7,9 +7,11 @@ import Abar from './abar'
 
 export default withStyles({
   root: {
-    background: '#212121',
+    background: '#03A9F4',
     fontFamily: 'Ubuntu',
     textAlign: 'center',
+    color: "#F5F5F5",
+    fontSize: '1.75rem',
   },
   lbreak: {
     height: '5rem',
@@ -32,12 +34,34 @@ export default withStyles({
     color: "#F5F5F5",
   },
 })(({ classes }) => (
-  <div>
+  <div className={classes.root}>
     <Abar />
     <p className={classes.lbreak}>​​ </p>
-    <Link to='/'>
+    <Link to='/content'>
       <Button className={classes.button}>
-        Back to the Home Page
+        Back to the Previous Page
+    </Button>
+    </Link>
+    <p> Major projects that Guido worked on! (In order of release) </p>
+    <ol>
+    <li> The language ABC. </li>
+    <li> The uncommon web browser Grail.  </li>
+    <li> The famous language Python.  </li>
+    <li> An in-house code auditor for Google.   </li>
+    <li> And finally the cloud-sharing software drop box!  </li>
+    </ol>
+    <p />
+    <p> The amount of repositories of the most popular languages on Github. </p>
+    <ol type='I'>
+    <li> Javascript - 323,938 </li>
+    <li> Java - 222,852 </li>
+    <li> Python - 164,852 </li>
+    <li> PHP - 138,771 </li>
+    <li> Ruby - 132,848 </li>
+    </ol>
+    <Link to='/content3'>
+      <Button className={classes.button}>
+        To the Next Page
     </Button>
     </Link>
   </div>
