@@ -1,40 +1,24 @@
 {
   "name": "special-person-project",
   "version": "1.0.0",
-  "description": "This is about Guido van Rossum.",
-  "keywords": [],
-  "homepage": "https://codesandbox.io/s/new",
-  "main": "src/index.js",
+  "repository": "https://github.com/HonoriaShana/PersonProject",
+  "author": "Honoria Shana",
+  "description": "This is about Guido van Rossum",
+  "license": "MIT",
   "dependencies": {
-    "babel-loader": "7.1.4",
-    "concurrently": "3.5.1",
-    "material-ui": "1.0.0-beta.40",
-    "react": "16.2.0",
-    "react-dom": "16.2.0",
-    "react-router-dom": "4.2.2",
-    "react-scripts": "1.1.0"
-  },
-  "scripts": {
-    "start":
-      "npm run build:env && \"./node_modules/.bin/concurrently\" -p \"[{name}]\" -n \"LAMBDA,REACT\" \"npm run start:lambda\" \"npm run start:react\"",
-    "start:react": "./node_modules/.bin/react-scripts start",
-    "start:lambda":
-      "./node_modules/.bin/netlify-lambda serve src/lambda/routes",
-    "build":
-      "npm run build:env && \"./node_modules/.bin/concurrently\" -p \"[{name}]\" -n \"LAMBDA,REACT\" \"npm run build:lambda\" \"npm run build:react\"",
-    "build:env": "exit 0",
-    "build:react": "./node_modules/.bin/react-scripts build",
-    "build:lambda":
-      "./node_modules/.bin/netlify-lambda build src/lambda/routes",
-    "test": "./node_modules/.bin/react-scripts test --env=jsdom"
-  },
-  "proxy": {
-    "/.netlify/functions": {
-      "target": "http://localhost:9000",
-      "pathRewrite": {
-        "^/\\.netlify/functions": ""
-      }
-    }
+
+    "babel-loader": "^7.1.2",
+    "cheerio": "^1.0.0-rc.2",
+    "concurrently": "^3.5.1",
+    "material-ui": "^1.0.0-beta.30",
+    "material-ui-icons": "^1.0.0-beta.17",
+    "netlify-lambda": "^0.2",
+    "react": "^16.1.0",
+    "react-dom": "^16.1.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.0",
+    "request": "^2.83.0",
+    "validator": "^9.4.0"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
@@ -43,5 +27,23 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.0"
+  },
+  "scripts": {
+    "start": "yarn build:env && concurrently -p \"[{name}]\" -n \"LAMBDA,REACT\" -c \"cyan.bold,red.bold\" \"yarn start:lambda\" \"yarn start:react\"",
+    "start:react": "react-scripts start",
+    "start:lambda": "netlify-lambda serve src/lambda/routes",
+    "build": "yarn build:env && concurrently -p \"[{name}]\" -n \"LAMBDA,REACT\" -c \"cyan.bold,red.bold\" \"yarn build:lambda\" \"yarn build:react\"",
+    "build:react": "react-scripts build && rm build/asset-manifest.json",
+    "build:env": "node ./build-env.js",
+    "build:lambda": "netlify-lambda build src/lambda/routes"
+
+  },
+  "proxy": {
+    "/.netlify/functions": {
+      "target": "http://localhost:9000",
+      "pathRewrite": {
+        "^/\\.netlify/functions": ""
+      }
+    }
   }
 }
