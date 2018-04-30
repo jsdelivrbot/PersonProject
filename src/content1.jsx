@@ -28,13 +28,11 @@ export default withStyles({
   text: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    paddingTop: "0.5rem",
     color: "#F5F5F5",
   },
   smolesttext: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    paddingTop: ".5rem",
     fontSize: ".9rem",
     color: "#F5F5F5",
   },
