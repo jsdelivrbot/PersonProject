@@ -28,7 +28,7 @@ export default withStyles({
   text: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    paddingTop: "0.8rem",
+    paddingTop: "0.5rem",
     color: "#F5F5F5",
   },
   smolesttext: {
