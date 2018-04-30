@@ -12,7 +12,7 @@ export default withStyles({
     textAlign: 'center',
   },
   lbreak: {
-    height: '5rem',
+    height: '4rem',
   },
   button: {
     color: "#212121",
@@ -34,7 +34,7 @@ export default withStyles({
   smolesttext: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    paddingTop: ".8rem",
+    paddingTop: ".5rem",
     fontSize: ".9rem",
     color: "#F5F5F5",
   },
