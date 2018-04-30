@@ -18,7 +18,8 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.0",
     "request": "^2.83.0",
-    "validator": "^9.4.0"
+    "validator": "^9.4.0",
+    "yarn": "1.6.0"
   },
   "devDependencies": {
     "eslint": "^4.16.0",
@@ -29,10 +30,12 @@
     "eslint-plugin-react": "^7.6.0"
   },
   "scripts": {
-    "start": "yarn build:env && concurrently -p \"[{name}]\" -n \"LAMBDA,REACT\" -c \"cyan.bold,red.bold\" \"yarn start:lambda\" \"yarn start:react\"",
+    "start":
+      "yarn build:env && concurrently -p \"[{name}]\" -n \"LAMBDA,REACT\" -c \"cyan.bold,red.bold\" \"yarn start:lambda\" \"yarn start:react\"",
     "start:react": "react-scripts start",
     "start:lambda": "netlify-lambda serve src/lambda/routes",
-    "build": "yarn build:env && concurrently -p \"[{name}]\" -n \"LAMBDA,REACT\" -c \"cyan.bold,red.bold\" \"yarn build:lambda\" \"yarn build:react\"",
+    "build":
+      "yarn build:env && concurrently -p \"[{name}]\" -n \"LAMBDA,REACT\" -c \"cyan.bold,red.bold\" \"yarn build:lambda\" \"yarn build:react\"",
     "build:react": "react-scripts build && rm build/asset-manifest.json",
     "build:env": "node ./build-env.js",
     "build:lambda": "netlify-lambda build src/lambda/routes"
