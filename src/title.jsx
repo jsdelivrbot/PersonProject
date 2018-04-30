@@ -18,20 +18,19 @@ export default withStyles({
   button: {
     color: "#212121",
     background: "#00BCD4",
-    height: '5vw',
-    width: '25vw',
-    fontSize: '2vw',
+    width: '15rem',
+    fontSize: '1.5rem',
     fontFamily: 'Ubuntu',
   },
   text: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    fontSize: "3.75vw",
-    paddingTop: ".5vw",
+    fontSize: "2rem",
+    paddingTop: ".5rem",
     color: "#F5F5F5",
   },
   padding: {
-    marginTop: "60px",
+    marginTop: "3rem",
   },
   textnopadding: {
     fontFamily: "Ubuntu",
@@ -39,19 +38,24 @@ export default withStyles({
     fontSize: "18px",
   },
   guidosmol: {
-    width: '40vw',
-    height: '30vw',
+    height: '20rem',
+    width: '30rem',
   },
   citetext: {
     fontFamily: "Ubuntu",
     textAlign: "center",
-    fontSize: "10px",
-    paddingTop: "1vw",
+    fontSize: "0.9rem",
+    paddingTop: "1rem",
+    paddingBottom: "1rem",
     color: "#F5F5F5",
   },
   //this is lazy but i dont really care bloody css isnt help'n me rn
   lbreak: {
-    height: '7vw',
+    height: '4rem',
+  },
+  spoopymarquee: {
+    fontSize: '.01rem',
+    color: "#F5F5F5",
   },
 })(({ classes }) => (
   <div className={classes.root} >
@@ -69,6 +73,7 @@ export default withStyles({
     </p>
     <p className={classes.textnopadding}>
      <div className={classes.citetext}>  Image By Daniel Stroud [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>], <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014.jpg">from Wikimedia Commons</a></div>
+     <a rel="noopener noreferrer" target="_blank" href="mailto:honoriashana@gmail.com"> <div className={classes.citetext}> To email the creator of this website click here </div> </a>
     </p>
   </div>
 ));
