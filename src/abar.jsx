@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "react-dom";
 import withStyles from "material-ui/styles/withStyles";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { Button, Paper } from "material-ui";
 import AppBar from "material-ui/AppBar";
 
@@ -16,7 +16,9 @@ export default withStyles({
 })(({ classes }) => (
   <div>
     <AppBar className={classes.tnav}>
-    Guido van Rossum
+    <Link to='/'>
+      <div>Guido van Rossum</div>
+    </Link>
     </AppBar>
   </div>
 ));
