@@ -70,7 +70,7 @@ export default withStyles({
     <Abar />
     <br />
     <p className={classes.lbreak}>​​​​​</p>
-    <img className={classes.guidosmol} src='https://rawgit.com/HonoriaShana/PersonProject/da4749b0104af46107c7ffd1a77549beda1428f4/src/Guido-portrait-2014.jpg' alt="guido"/>
+    <img className={classes.guidosmol} src='http://i.imgur.com/oJuTmH9.png' alt="guido"/>
     <div className={classes.padding} />
     <Link to='/content'><Button className={classes.button}>
       A bit about Guido!
