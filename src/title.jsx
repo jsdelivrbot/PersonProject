@@ -80,7 +80,7 @@ export default withStyles({
       Guido van Rossum is the talented, wonderful creator of Python!
     </p>
     <p className={classes.textnopadding}>
-     <a rel="noopener noreferrer" target="_blank" href="mailto:honoriashana@gmail.com"> <div className={classes.citetext}> To email the creator of this website click here </div> </a>
+     <a rel="noopener noreferrer" target="_blank" href="mailto:ellothompsonj@gmail.com"> <div className={classes.citetext}> To email the creator of this website click here </div> </a>
      <Link to='/licenses'>
       <Button className={classes.buttonlicense}>
       Licenses
