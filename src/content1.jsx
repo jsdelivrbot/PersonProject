@@ -78,7 +78,7 @@ export default withStyles({
     <hr className={classes.line4} />
     <h5 className={classes.text}>Van Rossum was born in 1956, a wee bit before the modern computer was invented. </h5>
     <h6 className={classes.smolesttext}>He is also from Haarlem, Netherlands — the namesake of the neighboorhood in Manhattan. </h6>
-    <img className={classes.pythonimage} src='https://rawgit.com/HonoriaShana/PersonProject/19861623c46dcd9a6540dfccc6cc0c5261f481be/src/img/1024px-Python-logo-notext.svg.png' alt='pythonlogo' />
+    <img className={classes.pythonimage} src='http://i.imgur.com/oJuTmH9.png' alt='pythonlogo' />
     <p />
     <Link to='/content2'>
       <Button className={classes.button2}>
